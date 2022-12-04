@@ -13,6 +13,8 @@ func main() {
 	f, err := os.Open(path)
 	check(err)
 
+	defer f.Close()
+
 	scanner := bufio.NewScanner(f)
 
 	totalScore := 0
