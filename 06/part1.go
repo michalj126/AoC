@@ -7,10 +7,6 @@ import (
 	"strings"
 )
 
-type Stack struct {
-	crates []string
-}
-
 func main() {
 	path := os.Args[1]
 
